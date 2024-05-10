@@ -33,3 +33,15 @@ if (numDivider === 0) {
         // Perform division
         const divisionResult = numDividend / numDivider;
 
+        // Check if result is a whole number or needs rounding
+        if (divisionResult % 1 !== 0) {
+          result.innerText = Math.floor(divisionResult);
+      } else {
+          result.innerText = divisionResult;
+      }
+  } catch (error) {
+      result.innerText = error.message;
+      console.error(error);
+  }
+
+});
