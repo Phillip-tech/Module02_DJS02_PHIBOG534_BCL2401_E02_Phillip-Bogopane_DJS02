@@ -7,3 +7,8 @@ form.addEventListener("submit", (event) => {
   const { dividend, divider } = Object.fromEntries(entries);
   result.innerText = dividend / divider;
 });
+
+// Validate inputs
+if (!dividend.trim() || !divider.trim()) {
+  throw new Error("Division not performed. Both values are required in inputs. Try again.");
+}
