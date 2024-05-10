@@ -28,3 +28,8 @@ if (!dividend.trim() || !divider.trim()) {
 if (numDivider === 0) {
   throw new Error("Attempted division by zero");
 }
+
+
+        // Perform division
+        const divisionResult = numDividend / numDivider;
+
