@@ -23,3 +23,8 @@ if (!dividend.trim() || !divider.trim()) {
     document.body.className = 'critical-error'; // Style for critical errors
     throw new Error("Non-numeric input provided");
 }
+
+// Check for division by zero
+if (numDivider === 0) {
+  throw new Error("Attempted division by zero");
+}
